@@ -254,3 +254,111 @@ header nav ul li:not(:last-child) a:active {
 }
 
 /* End Landing   */
+
+/* Start affilation */
+.affilation {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.affilation h1 {
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+.affilation .affilation-content {
+  background: linear-gradient(
+    90deg,
+    rgba(216, 178, 100, 1) 0%,
+    rgba(255, 237, 139, 1) 100%
+  );
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.affilation .affilation-content img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .affilation .affilation-content {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+/* End affilation */
+
+/* Start Chariman */
+.chariman {
+  background-color: #0d2846;
+  background-image: url("images/left-side-bg.png");
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  background-position: left;
+}
+
+.chariman .container > h1 {
+  font-size: 3.1rem;
+  width: 50%;
+  color: #fff;
+  border-bottom: 3px solid #d8b264;
+  border-top: 3px solid #fff;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.chariman .container .char-word {
+  display: flex;
+  color: white;
+  padding: 25px;
+  background-color: #fff1c221;
+  gap: 20px;
+  border-bottom-right-radius: 150px;
+  margin-top: 50px;
+}
+
+.chariman .container .char-word .left {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.chariman .container .char-word .left h3 {
+  font-size: 1.7rem;
+}
+
+.chariman .container .char-word .left p {
+  line-height: 1.5;
+}
+.chariman .container .char-word .left img {
+  width: 100%;
+}
+
+.chariman .container .char-word .right {
+  width: 70%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chariman .container .char-word .right h3 {
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+.chariman .container .char-word .right p {
+  line-height: 2;
+}
+
+.chariman .container .char-word .right p:last-child {
+  margin-bottom: 16px;
+}
+/* End Chariman */
