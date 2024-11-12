@@ -1,0 +1,15 @@
+/* Start global rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+/* End global rules */
