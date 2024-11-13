@@ -1,7 +1,27 @@
-let btnToggle = document.getElementById("btn-toggle");
-let list = document.getElementById("header-list");
-let children = [...list.children];
-console.log(children);
+const btnToggle = document.getElementById("btn-toggle");
+const list = document.getElementById("header-list");
+const children = [...list.children];
+const buttons = document.getElementsByClassName("days");
+const btnContent = [...document.getElementsByClassName("tab-pane")];
+
+const btnDays = [...buttons];
+btnDays.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    if (btn.classList.contains("active")) {
+      return;
+    }
+    btnDays.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    btnContent.forEach((x) => {
+      x.classList.remove("show");
+      x.classList.remove("active");
+    });
+    btn.classList.add("active");
+    btnContent[index].classList.add("show");
+    btnContent[index].classList.add("active");
+  });
+});
 
 btnToggle.addEventListener("click", (event) => {
   list.classList.toggle("show");
