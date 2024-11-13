@@ -361,4 +361,154 @@ header nav ul li:not(:last-child) a:active {
 .chariman .container .char-word .right p:last-child {
   margin-bottom: 16px;
 }
+
+@media (max-width: 600px) {
+  .chariman .container .char-word {
+    flex-direction: column;
+  }
+  .chariman .container .char-word .left {
+    width: 100%;
+  }
+
+  .chariman .container .char-word .right {
+    width: 100%;
+  }
+}
 /* End Chariman */
+
+/* Start Committee */
+.committee {
+  padding: 60px 0;
+  background-image: url(images/committee-back.png),
+    radial-gradient(circle, rgba(53, 58, 121, 1) 0%, rgba(90, 72, 150, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.committee .container > h1 {
+  font-size: 3.1rem;
+  width: 50%;
+  color: #fff;
+  border-bottom: 3px solid #d8b264;
+  border-top: 3px solid #fff;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.committee .container .content .first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.committee .container .content .first figure {
+  width: 20%;
+  text-align: center;
+  color: white;
+}
+
+.committee .container .content .first figure img {
+  width: 100%;
+}
+
+.committee .container .content .first figure figcaption h4 {
+  font-size: 1.3rem;
+}
+
+.committee .container .content .first figure figcaption p {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.committee .container .content .second {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22%);
+  gap: 40px;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .committee .container .content .second {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  }
+  .committee .container .content .first figure {
+    width: 100%;
+  }
+  .committee .container .content .first figure figcaption h4 {
+    font-size: 1rem;
+  }
+  .committee .container > h1 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+}
+
+.committee .container .content .second figure img {
+  width: 100%;
+}
+/* End Committee */
+
+/* Start our speakers */
+.speakers {
+  padding: 60px 0;
+  background-color: #0d2846;
+  margin-top: -1px;
+}
+
+.speakers .container > h1 {
+  font-size: 3.1rem;
+  width: 50%;
+  color: #fff;
+  border-bottom: 3px solid #d8b264;
+  border-top: 3px solid #fff;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.speakers .container .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22%);
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+  color: white;
+}
+
+.speakers .container .content figure .images {
+  position: relative;
+}
+
+.speakers .container .content figure img:first-of-type {
+  width: 100%;
+}
+
+.speakers .container .content figure .images img.flag {
+  width: 35px;
+  position: absolute;
+  right: 20%;
+  top: 70%;
+}
+
+@media (max-width: 600px) {
+  .speakers .container .content {
+    grid-template-columns: repeat(auto-fill, 45%);
+  }
+  .speakers .container > h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+
+/* End our speakers */
