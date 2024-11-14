@@ -661,3 +661,79 @@ header nav ul.show {
   }
 }
 /* End scientific */
+
+/* Start Sponsors */
+.sponsors {
+  padding: 60px 0;
+  background-color: #0d2846;
+  background-image: url("images/sponsor-back.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.sponsors .container > h1 {
+  font-size: 3.1rem;
+  width: 50%;
+  color: #fff;
+  border-bottom: 3px solid #d8b264;
+  border-top: 3px solid #fff;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sponsors .container .contant > p {
+  color: #d8b264;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.sponsors .container .contant .diamond,
+.sponsors .container .contant .gold,
+.sponsors .container .contant .silver {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20%);
+  gap: 20px;
+}
+
+.sponsors .container .contant .diamond img,
+.sponsors .container .contant .gold img,
+.sponsors .container .contant .silver img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .sponsors .container .contant .diamond,
+  .sponsors .container .contant .gold,
+  .sponsors .container .contant .silver {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45%);
+    gap: 20px;
+  }
+
+  .sponsors .container > h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+/* End Sponsors */
+
+/* Start footer */
+
+.footer {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.footer .container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+/* End footer */
