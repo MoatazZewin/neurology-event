@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kuwait-neurology-event</title>
+    <title>7th Kuwait Neurology Conference 2024</title>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +13,8 @@
       rel="stylesheet"
     />
     <!-- main template css file -->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- Start Header -->
@@ -24,19 +26,21 @@
           </button>
           <ul id="header-list">
             <li><a href="#home">HOME</a></li>
-            <li><a href="">CHAIRMAN’S MESSAGE</a></li>
-            <li><a href="">COMMITTEE</a></li>
-            <li><a href="">SPEAKERS</a></li>
-            <li><a href="">PROGRAM</a></li>
-            <li><a href="">SPONSORS</a></li>
+            <li><a href="#chairman">CHAIRMAN’S MESSAGE</a></li>
+            <li><a href="#committee">COMMITTEE</a></li>
+            <li><a href="#speakers">SPEAKERS</a></li>
+            <li><a href="#program">PROGRAM</a></li>
+            <li><a href="#sponsors">SPONSORS</a></li>
             <li><a href="">POSTER PRESENTATION</a></li>
-            <li><a href="">REGISTRATION</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- End header -->
 
-    <div class="landing">
+    <!-- Start Landing -->
+    <div class="landing" id="home">
       <video src="video/top-bg-video.mp4" loop muted autoplay>
         sorry your browser not support this video
       </video>
@@ -53,7 +57,7 @@
         </div>
       </div>
     </div>
-    <!-- End Header -->
+    <!-- End Landing -->
 
     <!-- Start affilation -->
     <div class="affilation">
@@ -70,11 +74,11 @@
     <!-- End affilation -->
 
     <!-- Start chairman -->
-    <div class="chariman">
+    <div class="chariman" id="chairman">
       <div class="container">
         <h1>Chairman Message</h1>
         <div class="char-word">
-          <div class="left">
+          <div class="left" data-aos="fade-up" data-aos-easing="ease">
             <img src="images/chairman-img.png" alt="chirman-photo" />
             <h3>Prof. Jasem Al-Hashel</h3>
             <p>
@@ -83,7 +87,7 @@
               Ibn Sina Hospital, MOH, Kuwait
             </p>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-up" data-aos-easing="ease">
             <h3>Welcome to The 7th Kuwait Neurology Conference 2024</h3>
             <p>
               It gives me an immense pleasure to invite you all to our 7th KNC
@@ -112,7 +116,7 @@
     <!-- End chairman -->
 
     <!-- Start committee -->
-    <div class="committee">
+    <div class="committee" id="committee">
       <div class="container">
         <h1>Our Committee</h1>
         <div class="content">
@@ -220,7 +224,7 @@
 
     <!-- Start speakers -->
 
-    <div class="speakers">
+    <div class="speakers" id="speakers">
       <div class="container">
         <h1>Our Speakers</h1>
         <div class="content">
@@ -314,7 +318,7 @@
     <!-- End speakers -->
 
     <!-- Start scientific -->
-    <div class="scientific">
+    <div class="scientific" id="program">
       <div class="container">
         <h1>Scientific Program</h1>
         <ul class="buttons">
@@ -447,12 +451,12 @@
     <!-- End scientific -->
 
     <!-- Sponosers Section -->
-    <div class="sponsors">
+    <div class="sponsors" id="sponsors">
       <div class="container">
         <h1>Our Speakers</h1>
         <div class="contant">
           <p>Diamond Sponsors</p>
-          <div class="diamond">
+          <div class="diamond" data-aos="fade-up" data-aos-easing="ease">
             <img src="images/sponsors/abbvie.jpg" alt="" />
             <img src="images/sponsors/biogen.jpg" alt="" />
             <img src="images/sponsors/genpharm.jpg" alt="" />
@@ -461,7 +465,7 @@
             <img src="images/sponsors/new-bridge.jpg" alt="" />
           </div>
           <p>Gold Sponsors</p>
-          <div class="gold">
+          <div class="gold" data-aos="fade-up" data-aos-easing="ease">
             <img src="images/sponsors/novartis.jpg" alt="" />
             <img src="images/sponsors/organon.jpg" alt="" />
             <img src="images/sponsors/stada.jpg" alt="" />
@@ -469,7 +473,7 @@
             <img src="images/sponsors/roche.jpg" alt="" />
           </div>
           <p>Silver Sponsors</p>
-          <div class="silver">
+          <div class="silver" data-aos="fade-up" data-aos-easing="ease">
             <img src="images/sponsors/novartis.jpg" alt="" />
             <img src="images/sponsors/merck.jpg" alt="" />
             <img src="images/sponsors/new-bridge.jpg" alt="" />
@@ -479,6 +483,7 @@
     </div>
     <!-- End Section -->
 
+    <!-- Start footer  -->
     <div class="footer">
       <div class="container">
         <p>
@@ -487,7 +492,8 @@
         <p>Managed by Design Master Events</p>
       </div>
     </div>
-
-    <script src="main.js"></script>
+    <!-- End footer  -->
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

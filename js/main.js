@@ -3,6 +3,25 @@ const list = document.getElementById("header-list");
 const children = [...list.children];
 const buttons = document.getElementsByClassName("days");
 const btnContent = [...document.getElementsByClassName("tab-pane")];
+const header = document.getElementsByTagName("header")[0];
+
+window.onscroll = () => {
+  if (window.scrollY == 0) {
+    header.classList.remove("sticky");
+  } else {
+    header.classList.add("sticky");
+  }
+};
+
+// AOS.init({
+//   duration: 800, // Duration of animations in milliseconds
+//   offset: 100, // Offset in pixels before animation starts
+// });
+
+AOS.init({
+  duration: 800,
+  easing: "slide",
+});
 
 const btnDays = [...buttons];
 btnDays.forEach((btn, index) => {

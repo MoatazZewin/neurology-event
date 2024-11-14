@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7th Kuwait Neurology Conference 2024</title>
+    <link rel="stylesheet" href="css/regist.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <button id="btn-toggle">
+            <span class="nav-toggler-icon"></span>
+          </button>
+          <ul id="header-list">
+            <li><a href="index.html#home">HOME</a></li>
+            <li><a href="index.html#chairman">CHAIRMAN’S MESSAGE</a></li>
+            <li><a href="index.html#committee">COMMITTEE</a></li>
+            <li><a href="index.html#speakers">SPEAKERS</a></li>
+            <li><a href="index.html#program">PROGRAM</a></li>
+            <li><a href="index.html#sponsors">SPONSORS</a></li>
+            <li><a href="index.html#">POSTER PRESENTATION</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Landing -->
+    <div class="landing">
+      <img src="images/registration-banner.jpg" alt="registration photo" />
+    </div>
+
+    <!-- End Landing -->
+
+    <!-- Start form -->
+    <div class="content">
+      <div class="container">
+        <div class="reg-left">
+          <h2>Select Conference</h2>
+          <div class="first">
+            <div class="cont">
+              <div class="left">
+                <input
+                  type="checkbox"
+                  name="wshop-1"
+                  checked
+                  id="wshop-1"
+                  class="styled-checkbox"
+                />
+                <label for="wshop-1" id="label">
+                  <h4>Physicians/Doctors:</h4>
+                </label>
+              </div>
+              <p>25 KD</p>
+            </div>
+            <div class="cont">
+              <div class="left">
+                <h4>Nurses / Technicians / Students:</h4>
+              </div>
+              <p>*FREE Onsite</p>
+            </div>
+          </div>
+          <hr />
+
+          <div class="second">
+            <div class="cont">
+              <div class="left">
+                <input
+                  type="checkbox"
+                  name="wshop-2"
+                  id="wshop-2"
+                  class="styled-checkbox"
+                  onchange="onChange(event)"
+                />
+                <label for="wshop-2" id="label">
+                  <h4>
+                    Workshop-1 <br />
+                    <p>
+                      Electroencephalogram (EEG) <br />
+                      Friday, 13th Dec 2024 05:00PM - 07:00PM
+                    </p>
+                  </h4>
+                </label>
+              </div>
+              <p>50 KD</p>
+            </div>
+            <div class="cont">
+              <div class="left">
+                <input
+                  type="checkbox"
+                  name="wshop-3"
+                  id="wshop-3"
+                  class="styled-checkbox"
+                  onchange="onChange(event)"
+                />
+                <label for="wshop-3" id="label">
+                  <h4>
+                    Workshop-1 <br />
+                    <p>
+                      Electroencephalogram (EEG) <br />
+                      Friday, 13th Dec 2024 05:00PM - 07:00PM
+                    </p>
+                  </h4>
+                </label>
+              </div>
+              <p>50 KD</p>
+            </div>
+          </div>
+          <hr />
+          <div class="payment">
+            <h2>Payment</h2>
+            <div class="cont">
+              <div class="left">
+                <input
+                  type="checkbox"
+                  name="online"
+                  id="online"
+                  checked
+                  class="styled-checkbox"
+                />
+                <label for="online" id="label">
+                  <h4>Pay Online & Save</h4>
+                </label>
+              </div>
+              <img src="images/onlinepayment.jpg" alt="" />
+              <img src="images/payonline.gif" alt="" />
+            </div>
+            <hr />
+            <div class="cont">
+              <div class="left">
+                <div>Grand Total: <span id="total">25</span> KD</div>
+                <button>REGISTER NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="all">
+            <div class="form-floating">
+              <select name="title" id="title">
+                <option value="">Selected Title</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Pro.">Pro.</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+              </select>
+              <label for="title">Select Title</label>
+            </div>
+          </div>
+
+          <div class="half">
+            <div class="form-floating">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                id="first-name"
+              />
+              <label for="first-name">First Name</label>
+            </div>
+          </div>
+          <div class="half">
+            <div class="form-floating">
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                id="last-name"
+              />
+              <label for="last-name">Last Name</label>
+            </div>
+          </div>
+
+          <div class="half">
+            <div class="form-floating">
+              <input
+                type="text"
+                name="jobTitle"
+                placeholder="Job Title"
+                id="job-title"
+              />
+              <label for="job-title">Job Title</label>
+            </div>
+          </div>
+          <div class="half">
+            <div class="form-floating">
+              <input
+                type="text"
+                name="department"
+                placeholder="department"
+                id="department"
+              />
+              <label for="department">Department / Hospital</label>
+            </div>
+          </div>
+
+          <div class="all">
+            <div class="form-floating">
+              <select name="title" id="title">
+                <option value="">Select Speciality</option>
+                <option value="1">Allergy &amp; Immunology</option>
+                <option value="2">
+                  Allergy &amp; Immunology | Clinical &amp; Laboratory
+                  Immunology
+                </option>
+                <option value="3">Anesthesiology</option>
+                <option value="4">
+                  Anesthesiology | Critical Care Medicine
+                </option>
+                <option value="5">
+                  Anesthesiology | Obstetric Anesthesiology
+                </option>
+                <option value="6">Anesthesiology | Pain Medicine</option>
+                <option value="7">
+                  Anesthesiology | Pediatric Anesthesiology
+                </option>
+                <option value="406">Anaesthesia Technicians</option>
+                <option value="407">Cardiology</option>
+                <option value="8">Colon &amp; Rectal Surgery</option>
+                <option value="401">Critical Care</option>
+                <option value="9">Dermatology</option>
+                <option value="10">Dermatology | Dermatopathology</option>
+                <option value="11">Dermatology | Procedural Dermatology</option>
+                <option value="330">Diabetes</option>
+                <option value="133">Dieticians</option>
+                <option value="440">Emergency Medical Service</option>
+                <option value="441">EMT</option>
+                <option value="12">Emergency Medicine</option>
+                <option value="13">
+                  Emergency Medicine | Medical Toxicology
+                </option>
+                <option value="14">
+                  Emergency Medicine | Pediatric Emergency Medicine
+                </option>
+                <option value="15">Emergency Medicine | Sports Medicine</option>
+                <option value="331">Endocrine</option>
+                <option value="16">Family Medicine</option>
+                <option value="17">Family Medicine | Geriatric Medicine</option>
+                <option value="18">Family Medicine | Sports Medicine</option>
+                <option value="19">Family Practice</option>
+                <option value="20">Family Practice | Geriatric Medicine</option>
+                <option value="451">General Practitioner(GP)</option>
+                <option value="21">Internal Medicine</option>
+                <option value="22">
+                  Internal Medicine | Advanced Heart Failure &amp; Transplant
+                  Cardiology
+                </option>
+                <option value="23">
+                  Internal Medicine | Cardiovascular Disease
+                </option>
+                <option value="24">
+                  Internal Medicine | Clinical Cardiac Electrophysiology
+                </option>
+                <option value="25">
+                  Internal Medicine | Critical Care Medicine
+                </option>
+                <option value="26">
+                  Internal Medicine | Endocrinology, Diabetes &amp; Metabolism
+                </option>
+                <option value="27">Internal Medicine | Gastroenterology</option>
+                <option value="28">
+                  Internal Medicine | Geriatric Medicine
+                </option>
+                <option value="29">Internal Medicine | Hematology</option>
+                <option value="30">
+                  Internal Medicine | Hematology &amp; Oncology
+                </option>
+                <option value="31">
+                  Internal Medicine | Infectious Disease
+                </option>
+                <option value="32">
+                  Internal Medicine | Interventional Cardiology
+                </option>
+                <option value="33">Internal Medicine | Nephrology</option>
+                <option value="34">Internal Medicine | Oncology</option>
+                <option value="35">
+                  Internal Medicine | Pulmonary Disease
+                </option>
+                <option value="36">
+                  Internal Medicine | Pulmonary Disease &amp; Critical Care
+                  Medicine
+                </option>
+                <option value="37">Internal Medicine | Rheumatology</option>
+                <option value="38">Internal Medicine | Sports Medicine</option>
+                <option value="39">
+                  Internal Medicine | Transplant Hepatology
+                </option>
+                <option value="40">Internal Medicine-Pediatrics</option>
+                <option value="41">Medical Genetics</option>
+                <option value="42">
+                  Medical Genetics | Biochemical Genetics
+                </option>
+                <option value="43">
+                  Medical Genetics | Molecular Genetic Pathology
+                </option>
+                <option value="134">Neonatology/Neonatal ICU</option>
+                <option value="44">Neurological Surgery</option>
+                <option value="45">
+                  Neurological Surgery | Endovascular Surgical Neuroradiology
+                </option>
+                <option value="46" selected="selected">Neurology</option>
+                <option value="47">Neurology | Child Neurology</option>
+                <option value="48">Neurology | Clinical Neurophysiology</option>
+                <option value="49">
+                  Neurology | Endovascular Surgical Neuroradiology
+                </option>
+                <option value="50">Neurology | Neuromuscular Medicine</option>
+                <option value="51">Neurology | Pain Medicine</option>
+                <option value="52">Nuclear Medicine</option>
+                <option value="402">Nurses</option>
+                <option value="53">Obstetrics &amp; Gynecology</option>
+                <option value="54">
+                  Obstetrics &amp; Gynecology | Female Pelvic Medicine &amp;
+                  Reconstructive Surgery
+                </option>
+                <option value="132">OT(Occupational Therapy)</option>
+                <option value="55">Ophthalmology</option>
+                <option value="56">
+                  Ophthalmology | Ophthalmic Plastic &amp; Reconstructive
+                  Surgery
+                </option>
+                <option value="136">Ophthalmologist</option>
+                <option value="57">Orthopaedic Surgery</option>
+                <option value="58">
+                  Orthopaedic Surgery | Adult Reconstructive Orthopaedics
+                </option>
+                <option value="59">
+                  Orthopaedic Surgery | Foot &amp; Ankle Orthopaedics
+                </option>
+                <option value="60">Orthopaedic Surgery | Hand Surgery</option>
+                <option value="61">
+                  Orthopaedic Surgery | Musculoskeletal Oncology
+                </option>
+                <option value="62">
+                  Orthopaedic Surgery | Orthopaedic Sports Medicine
+                </option>
+                <option value="63">
+                  Orthopaedic Surgery | Orthopaedic Surgery of the Spine
+                </option>
+                <option value="64">
+                  Orthopaedic Surgery | Orthopaedic Trauma
+                </option>
+                <option value="65">
+                  Orthopaedic Surgery | Pediatric Orthopaedics
+                </option>
+                <option value="66">Otolaryngology</option>
+                <option value="67">
+                  Otolaryngology | Otology - Neurotology
+                </option>
+                <option value="68">
+                  Otolaryngology | Pediatric Otolaryngology
+                </option>
+                <option value="129">Otolaryngology | Laryngology</option>
+                <option value="69">Pathology-Anatomic &amp; Clinical</option>
+                <option value="70">
+                  Pathology-Anatomic &amp; Clinical | Blood Banking -
+                  Transfusion Medicine
+                </option>
+                <option value="71">
+                  Pathology-Anatomic &amp; Clinical | Chemical Pathology
+                </option>
+                <option value="72">
+                  Pathology-Anatomic &amp; Clinical | Cytopathology
+                </option>
+                <option value="73">
+                  Pathology-Anatomic &amp; Clinical | Forensic Pathology
+                </option>
+                <option value="74">
+                  Pathology-Anatomic &amp; Clinical | Hematology
+                </option>
+                <option value="75">
+                  Pathology-Anatomic &amp; Clinical | Medical Microbiology
+                </option>
+                <option value="76">
+                  Pathology-Anatomic &amp; Clinical | Neuropathology
+                </option>
+                <option value="77">
+                  Pathology-Anatomic &amp; Clinical | Pediatric Pathology
+                </option>
+                <option value="78">Pediatrics</option>
+                <option value="79">Pediatrics | Adolescent Medicine</option>
+                <option value="80">
+                  Pediatrics | Neonatal-Perinatal Medicine
+                </option>
+                <option value="81">Pediatrics | Pediatric Cardiology</option>
+                <option value="82">
+                  Pediatrics | Pediatric Critical Care Medicine
+                </option>
+                <option value="418">Pediatrics | Pediatric Dermatology</option>
+                <option value="83">
+                  Pediatrics | Pediatric Emergency Medicine
+                </option>
+                <option value="84">Pediatrics | Pediatric Endocrinology</option>
+                <option value="85">
+                  Pediatrics | Pediatric Gastroenterology
+                </option>
+                <option value="86">
+                  Pediatrics | Pediatric Hematology-Oncology
+                </option>
+                <option value="87">
+                  Pediatrics | Pediatric Infectious Diseases
+                </option>
+                <option value="88">Pediatrics | Pediatric Nephrology</option>
+                <option value="89">Pediatrics | Pediatric Pulmonology</option>
+                <option value="90">Pediatrics | Pediatric Rheumatology</option>
+                <option value="91">
+                  Pediatrics | Pediatric Sports Medicine
+                </option>
+                <option value="92">
+                  Pediatrics | Pediatric Transplant Hepatology
+                </option>
+                <option value="403">Perfusionists</option>
+                <option value="93">
+                  Physical Medicine &amp; Rehabilitation
+                </option>
+                <option value="94">
+                  Physical Medicine &amp; Rehabilitation | Neuromuscular
+                  Medicine
+                </option>
+                <option value="95">
+                  Physical Medicine &amp; Rehabilitation | Pain Medicine
+                </option>
+                <option value="96">
+                  Physical Medicine &amp; Rehabilitation | Spinal Cord Injury
+                  Medicine
+                </option>
+                <option value="97">
+                  Physical Medicine &amp; Rehabilitation | Sports Medicine
+                </option>
+                <option value="404">Physiotherapists</option>
+                <option value="131">PT(Physical Therapy)</option>
+                <option value="98">Plastic Surgery</option>
+                <option value="99">
+                  Plastic Surgery | Craniofacial Surgery
+                </option>
+                <option value="100">Plastic Surgery | Hand Surgery</option>
+                <option value="101">Preventive Medicine</option>
+                <option value="102">
+                  Preventive Medicine | Medical Toxicology
+                </option>
+                <option value="103">Psychiatry</option>
+                <option value="104">Psychiatry | Addiction Psychiatry</option>
+                <option value="105">
+                  Psychiatry | Child &amp; Adolescent Psychiatry
+                </option>
+                <option value="106">Psychiatry | Forensic Psychiatry</option>
+                <option value="107">Psychiatry | Geriatric Psychiatry</option>
+                <option value="461">Public Health</option>
+                <option value="135">Pulmonology</option>
+                <option value="108">Radiation Oncology</option>
+                <option value="109">Radiology-Diagnostic</option>
+                <option value="110">
+                  Radiology-Diagnostic | Abdominal Radiology
+                </option>
+                <option value="111">
+                  Radiology-Diagnostic | Cardiothoracic Radiology
+                </option>
+                <option value="112">
+                  Radiology-Diagnostic | Endovascular Surgical Neuroradiology
+                </option>
+                <option value="113">
+                  Radiology-Diagnostic | Muscoskeletal Radiology
+                </option>
+                <option value="114">
+                  Radiology-Diagnostic | Neuroradiology
+                </option>
+                <option value="115">
+                  Radiology-Diagnostic | Nuclear Radiology
+                </option>
+                <option value="116">
+                  Radiology-Diagnostic | Pediatric Radiology
+                </option>
+                <option value="117">
+                  Radiology-Diagnostic | Vascular &amp; Interventional Radiology
+                </option>
+                <option value="201">Researcher</option>
+                <option value="405">Respiratory therapists</option>
+                <option value="332">Rheumatology</option>
+                <option value="118">Sleep Medicine</option>
+                <option value="130">SLP(Speech Language Pathology)</option>
+                <option value="119">Surgery-General</option>
+                <option value="120">Surgery-General | Hand Surgery</option>
+                <option value="121">Surgery-General | Pediatric Surgery</option>
+                <option value="122">
+                  Surgery-General | Surgical Critical Care
+                </option>
+                <option value="123">Surgery-General | Vascular Surgery</option>
+                <option value="124">Thoracic Surgery</option>
+                <option value="125">
+                  Thoracic Surgery | Congenital Cardiac Surgery
+                </option>
+                <option value="126">
+                  Thoracic Surgery | Thoracic Surgery-Integrated
+                </option>
+                <option value="127">Urology</option>
+                <option value="128">Urology | Pediatric Urology</option>
+                <option value="9999">Others</option>
+              </select>
+              <label for="title">Select Speciality</label>
+            </div>
+          </div>
+
+          <div class="half">
+            <div class="form-floating">
+              <input type="email" name="email" placeholder="Email" id="email" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="all">
+            <div class="form-floating">
+              <select name="country" id="country">
+                <option value="">Please select Country</option>
+                <option value="Afganistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antigua &amp; Barbuda">
+                  Antigua &amp; Barbuda
+                </option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bonaire">Bonaire</option>
+                <option value="Bosnia &amp; Herzegovina">
+                  Bosnia &amp; Herzegovina
+                </option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Ter">
+                  British Indian Ocean Ter
+                </option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Canary Islands">Canary Islands</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">
+                  Central African Republic
+                </option>
+                <option value="Chad">Chad</option>
+                <option value="Channel Islands">Channel Islands</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos Island">Cocos Island</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote DIvoire">Cote DIvoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaco">Curacao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands">Falkland Islands</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Ter">French Southern Ter</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Great Britain">Great Britain</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="India">India</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea North">Korea North</option>
+                <option value="Korea South">Korea South</option>
+                <option value="Kuwait" selected="">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macau">Macau</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Midway Islands">Midway Islands</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nambia">Nambia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherland Antilles">Netherland Antilles</option>
+                <option value="Netherlands">
+                  Netherlands (Holland, Europe)
+                </option>
+                <option value="Nevis">Nevis</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau Island">Palau Island</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Phillipines">Philippines</option>
+                <option value="Pitcairn Island">Pitcairn Island</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Republic of Montenegro">
+                  Republic of Montenegro
+                </option>
+                <option value="Republic of Serbia">Republic of Serbia</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="St Barthelemy">St Barthelemy</option>
+                <option value="St Eustatius">St Eustatius</option>
+                <option value="St Helena">St Helena</option>
+                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                <option value="St Lucia">St Lucia</option>
+                <option value="St Maarten">St Maarten</option>
+                <option value="St Pierre &amp; Miquelon">
+                  St Pierre &amp; Miquelon
+                </option>
+                <option value="St Vincent &amp; Grenadines">
+                  St Vincent &amp; Grenadines
+                </option>
+                <option value="Saipan">Saipan</option>
+                <option value="Samoa">Samoa</option>
+                <option value="Samoa American">Samoa American</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome &amp; Principe">
+                  Sao Tome &amp; Principe
+                </option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Tahiti">Tahiti</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad &amp; Tobago">
+                  Trinidad &amp; Tobago
+                </option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks &amp; Caicos Is">
+                  Turks &amp; Caicos Is
+                </option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">
+                  United Arab Emirates
+                </option>
+                <option value="United States of America">
+                  United States of America
+                </option>
+                <option value="Uraguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican City State">Vatican City State</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Virgin Islands (Brit)">
+                  Virgin Islands (Brit)
+                </option>
+                <option value="Virgin Islands (USA)">
+                  Virgin Islands (USA)
+                </option>
+                <option value="Wake Island">Wake Island</option>
+                <option value="Wallis &amp; Futana Is">
+                  Wallis &amp; Futana Is
+                </option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zaire">Zaire</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+              <label for="title">Select Speciality</label>
+            </div>
+          </div>
+
+          <marquee class="all">
+            <h4 class="float-whatsapp">
+              For Registration Support, WhatsApp :-
+              <a
+                href="https://api.whatsapp.com/send?phone=96565084326&amp;"
+                class=""
+                target="_blank"
+              >
+                +965-65084326</a
+              >
+            </h4>
+          </marquee>
+        </form>
+      </div>
+    </div>
+    <!-- End form -->
+
+    <!-- Start footer  -->
+    <div class="footer">
+      <div class="container">
+        <p>
+          Copyright 2024 - 7th Kuwait Neurology Conference. All Rights Reserved.
+        </p>
+        <p>Managed by Design Master Events</p>
+      </div>
+    </div>
+    <!-- End footer  -->
+
+    <script src="js/regist.js"></script>
+  </body>
+</html>
