@@ -37,3 +37,12 @@ To run this website locally:
    ```bash
    git clone https://github.com/MoatazZewin/neurology-event.git
    ```
+
+## Libraries
+
+1. aos (animation on scroll)
+
+## Screenshots
+
+<img src="images/Screenshot (203).png" alt="Event Website Screenshot" width="500"/>
+<img src="images/Screenshot (204).png" alt="Event Website Screenshot" width="500"/>
