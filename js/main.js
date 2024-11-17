@@ -5,13 +5,46 @@ const buttons = document.getElementsByClassName("days");
 const btnContent = [...document.getElementsByClassName("tab-pane")];
 const header = document.getElementsByTagName("header")[0];
 
-window.onscroll = () => {
+const sections = document.querySelectorAll("section");
+
+let current = "";
+window.addEventListener("scroll", () => {
   if (window.scrollY == 0) {
     header.classList.remove("sticky");
   } else {
     header.classList.add("sticky");
   }
-};
+
+  // Loop through sections to find which one is in the viewport
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY <= sectionTop + sectionHeight
+    ) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  // Remove "active" class from all links and add to the current section's link
+  children.forEach((link) => {
+    link.classList.remove("active");
+    if (link.children[0].getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
+});
+
+children.forEach((ele) => {
+  ele.addEventListener("click", () => {
+    list.classList.remove("show");
+  });
+});
+// window.onscroll = () => {
+
+// };
 
 // AOS.init({
 //   duration: 800, // Duration of animations in milliseconds
@@ -44,9 +77,6 @@ btnDays.forEach((btn, index) => {
 
 btnToggle.addEventListener("click", (event) => {
   list.classList.toggle("show");
-  children.forEach((ele) => {
-    ele.classList.toggle("show");
-  });
 });
 
 const eventDate = new Date("December 12, 2024 09:44:00").getTime();

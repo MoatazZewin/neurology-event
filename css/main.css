@@ -93,6 +93,10 @@ header nav ul li a {
   border: 1px solid transparent;
 }
 
+header nav ul li.active a {
+  color: #96ffe8;
+}
+
 header nav ul li:not(:last-child) a:hover {
   color: #000000;
   background-color: #96ffe8;
