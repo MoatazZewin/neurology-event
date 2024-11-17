@@ -2,6 +2,10 @@
 
 A simple, responsive event website built using HTML, CSS, and JavaScript. This project showcases an event with details, countdown timer, and basic information about the event.
 
+## Live Demo
+
+<a href="https://neurology-event.netlify.app/" target="_blank">View the live demo here</a>
+
 ## Table of Contents
 
 - [Description](#description)
